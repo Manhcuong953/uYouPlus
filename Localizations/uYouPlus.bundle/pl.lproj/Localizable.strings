@@ -1,0 +1,158 @@
+// About
+"ABOUT" = "O programie";
+
+"VERSION" = "Wersja";
+"VERSION_CHECK" = "Dotknij aby sprawdzić aktualizację!";
+
+"REPORT_AN_ISSUE" = "Zgłoś błąd";
+"ADD_TITLE" = "Podaj tutaj tytuł...";
+
+"COPY_SETTINGS" = "Kopiuj ustawienia";
+"COPY_SETTINGS_DESC" = "Kopiuj ustawienia do schowka";
+"PASTE_SETTINGS" = "Wklej ustawienia";
+"PASTE_SETTINGS_DESC" = "Wklej ustawienia ze schowka i zastosuj je";
+"PASTE_SETTINGS_ALERT" = "Are you sure you want to paste the settings?";
+
+"QUIT_YOUTUBE" = "Zamknij aplikację";
+
+"RESTART_YOUTUBE" = "Zrestartuj YouTube aby wprowadzić zmiany";
+
+// App appearance
+"APP_THEME" = "🎨 Wygląd aplikacji";
+"THEME_OPTIONS" = "Opcje motywu";
+
+"DARK_THEME" = "Ciemny motyw";
+
+"DEFAULT_THEME" = "Domyślny";
+"DEFAULT_THEME_DESC" = "";
+
+"OLD_DARK_THEME" = "Jasnoszary";
+"OLD_DARK_THEME_DESC" = "Stary, ciemny motyw YouTube";
+
+"OLED_DARK_THEME" = "Tryb ciemny OLED (Eksperymentalny)";
+"OLED_DARK_THEME_2" = "Tryb ciemny OLED";
+"OLED_DARK_THEME_DESC" = "Ciemny, czarny motyw";
+
+"OLED_KEYBOARD" = "Klawiatura OLED (Eksperymentalna)";
+"OLED_KEYBOARD_DESC" = "Może w niektórych przypadkach nie działać. Restart aplikacji jest wymagany.";
+
+// Video player options
+"VIDEO_PLAYER_OPTIONS" = "⏯️ Ustawienia odtwarzacza";
+
+"SLIDE_TO_SEEK" = "Włącz szukanie za pomocą przesuwania";
+"SLIDE_TO_SEEK_DESC" = "Przywróć wyszukiwanie gestów za pomocą przesuwania.";
+
+"DISABLE_DOUBLE_TAP_TO_SEEK" = "Wyłącz podwójne kliknięcie aby szukać";
+"DISABLE_DOUBLE_TAP_TO_SEEK_DESC" = "";
+
+"SNAP_TO_CHAPTER" = "Wyłącz przyciąganie do rozdziału";
+"SNAP_TO_CHAPTER_DESC" = "Wyłącza przyciąganie do rozdziału w trakcie przeszukiwania filmu";
+
+"PINCH_TO_ZOOM" = "Wyłącz możliwość powiększania obrazu";
+"PINCH_TO_ZOOM_DESC" = "Przez gest rozsunięcia ekranu dwoma palcami";
+
+"YT_MINIPLAYER" = "Włącz miniodtwarzach dla wszystkich filmów";
+"YT_MINIPLAYER_DESC" = "Np. filmów dla dzieci.";
+
+"HIDE_REMIX_BUTTON" = "Ukryj przycisk Remix";
+"HIDE_REMIX_BUTTON_DESC" = "";
+
+"HIDE_CLIP_BUTTON" = "Ukryj przycisk Clip";
+"HIDE_CLIP_BUTTON_DESC" = "";
+
+"HIDE_DOWNLOAD_BUTTON" = "Ukryj przycisk Pobierania";
+"HIDE_DOWNLOAD_BUTTON_DESC" = "";
+
+"STOCK_VOLUME_HUD" = "Użyj systemowego paska głośności";
+"STOCK_VOLUME_HUD_DESC" = "";
+
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
+
+// Video controls overlay options
+"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Opcje wyglądu odtwarzacza video";
+
+"HIDE_AUTOPLAY_SWITCH" = "Ukryj przycisk Autoodtwarzanie";
+"HIDE_AUTOPLAY_SWITCH_DESC" = "Ukrywa przycisk Autoodtwarzanie w okładce odtwarzacza filmów.";
+
+"HIDE_SUBTITLES_BUTTON" = "Ukryj przycisk Napisy";
+"HIDE_SUBTITLES_BUTTON_DESC" = "Ukrywa przycisk Napisy w okładce odtwarzacza filmów.";
+
+"HIDE_HUD_MESSAGES" = "Ukryj komunikaty HUD";
+"HIDE_HUD_MESSAGES_DESC" = "Np. Napisy są wył/wł, Odtwarzanie w pętli jest włączone, ...";
+
+"HIDE_PAID_PROMOTION_CARDS" = "Ukryj baner płatnej promocji";
+"HIDE_PAID_PROMOTION_CARDS_DESC" = "Ukrywa baner 'Zawiera płatną promocję' w niektórych filmach.";
+
+"HIDE_CHANNEL_WATERMARK" = "Ukryj znak wodny kanału";
+"HIDE_CHANNEL_WATERMARK_DESC" = "Np. logo kanału w prawym dolnym rogu";
+
+"HIDE_PREVIOUS_AND_NEXT_BUTTON" = "Ukryj przyciski Poprzedni i Następny";
+"HIDE_PREVIOUS_AND_NEXT_BUTTON_DESC" = "Ukryj przyciski Poprzedni i Następny w okładce sterowania filmu.";
+
+"REPLACE_PREVIOUS_NEXT_BUTTON" = "Zamień przyciski Poprzedni i Następny";
+"REPLACE_PREVIOUS_NEXT_BUTTON_DESC" = "Zamienia przyciski Poprzedni i Następny z przyciskami Przewiń w przód i tył. Restart aplikacji jest wymagany.";
+
+"RED_PROGRESS_BAR" = "Czerwony pasek postępu";
+"RED_PROGRESS_BAR_DESC" = "";
+
+"HIDE_HOVER_CARD" = "Ukryj ekrany końcowe (YTNoHoverCards)";
+"HIDE_HOVER_CARD_DESC" = "Ukryj ekrany końcowe (miniaturki) na końcu filmów.";
+
+"HIDE_RIGHT_PANEL" = "Wyłącz dodatkowe nakładki w trybie pełnoekranowym";
+"HIDE_RIGHT_PANEL_DESC" = "Np. Komentarze, czat na żywo itp.";
+
+// Shorts controls overlay options
+"SHORTS_CONTROLS_OVERLAY_OPTIONS" = "💥 Ustawienia odtwarzacza dla Shorts";
+
+"HIDE_SUPER_THANKS" = "Ukryj przycisk superpodziękowania";
+"HIDE_SUPER_THANKS_DESC" = "";
+
+"HIDE_SUBCRIPTIONS" = "Ukryj przycisk napisów";
+"HIDE_SUBCRIPTIONS_DESC" = "";
+
+"DISABLE_RESUME_TO_SHORTS" = "Wyłącz wznawianie Short\'ów";
+"DISABLE_RESUME_TO_SHORTS_DESC" = "Jeśli zamkniesz aplikację podczas oglądania Short\'ów ta opcja zablokuje powrót do nich po ponownym uruchomieniu";
+
+// Miscellaneous
+"MISCELLANEOUS" = "🔎 Inne";
+
+"HIDE_UYOU" = "Ukryj zakładkę uYou";
+"HIDE_ISPONSORBLOCK" = "Ukryj przycisk iSponsorBlock";
+
+"CAST_CONFIRM" = "Alert przed przesyłaniem (YTCastConfirm)";
+"CAST_CONFIRM_DESC" = "Pokaż alert przed przesyłaniem aby nie łączyć się przez przypadek z telewizorem.";
+"CASTING" = "Przesyłania";
+"MSG_ARE_YOU_SURE" = "Czy na pewno chcesz przesyłać?";
+"MSG_YES" = "Tak";
+"MSG_CANCEL" = "Anuluj";
+
+"DISABLE_HINTS" = "Wyłącz wskazówki";
+"DISABLE_HINTS_DESC" = "Wyłącza podpowiedzi kiedy aplikacja zostanie ponownie zainstalowana";
+
+"ENABLE_YT_STARTUP_ANIMATION" = "Włącz animację YouTube podczas uruchamiania aplikacji";
+"ENABLE_YT_STARTUP_ANIMATION_DESC" = "";
+
+"HIDE_CHIP_BAR" = "Ukryj górny pasek";
+"HIDE_CHIP_BAR_DESC" = "Ukryj górny pasek na głównym ekranie oraz w subskrybowanych kanałach (np. Wszystkie filmy, kontynuuj oglądanie itp.)";
+
+"HIDE_PLAY_NEXT_IN_QUEUE" = "Ukryj \"Otwórz jako następny w kolejce\"";
+"HIDE_PLAY_NEXT_IN_QUEUE_DESC" = "";
+
+"IPHONE_LAYOUT" = "Wymuś wygląd iPhone";
+"IPHONE_LAYOUT_DESC" = "";
+
+"NEW_MINIPLAYER_STYLE" = "Nowy styl miniodtwarzacza (BigYTMiniPlayer)";
+"NEW_MINIPLAYER_STYLE_DESC" = "Restart aplikacji jest wymagany.";
+
+"YT_RE_EXPLORE" = "Zamień kartę Shorts na kartę Odkrywaj (YTReExplore)";
+"YT_RE_EXPLORE_DESC" = "Restart aplikacji jest wymagany.";
+
+"ENABLE_FLEX" = "Włącz FLEX";
+"ENABLE_FLEX_DESC" = "Uruchamia FLEX do diagnostyki";
+
+"FIX_GOOGLE_SIGNIN" = "Napraw logowanie się z Google (tylko dla użytkowników TrollStore)";
+"FIX_GOOGLE_SIGNIN_DESC" = "Włącz tą opcję tylko wtedy, kiedy nie możesz zalogować się swoim kontem Google, a aplikacja została zainstalowana przez TrollStore. Jeżeli da się zalogować normalnie, zostaw to wyłączone. Restart aplikacji jest wymagany.";
+
+"GOOGLE_SIGNIN_FIX" = "Google sign-in fix";
+"GOOGLE_SIGNIN_FIX_DESC" = "";
