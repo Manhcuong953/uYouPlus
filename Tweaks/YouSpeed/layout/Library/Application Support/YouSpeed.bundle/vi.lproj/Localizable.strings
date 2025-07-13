@@ -1,8 +1,0 @@
-"ENABLED" = "Hiển thị nút tốc độ";
-"POSITION" = "Vị trí nút tốc độ";
-
-"YSMS_KEY" = "Thêm tốc độ";
-"YSMS_KEY_DESC" = "Thêm nhiều tốc độ phát video vào danh sách. Cần khởi động lại ứng dụng.";
-
-"YSFNS_KEY" = "Thêm tốc độ cho bộ chọn tốc độ gốc";
-"YSFNS_KEY_DESC" = "Thay thế bộ chọn tốc độ video mặc định của YouTube bằng bộ chọn đơn giản nơi tất cả các tốc độ tùy chỉnh có thể được liệt kê. Cần khởi động lại ứng dụng.";
