@@ -14,7 +14,7 @@ Chào mừng bạn đến với nhánh uYouPlus của tôi ! Kho lưu trữ này
 
 ### 📥 **Tải xuống**
 
-Tìm các bản phát hành mới nhất [**here**](https://github.com/mlclmtan/uYouPlus/releases/latest). Tải xuống và cài đặt iPA trực tiếp.
+Tìm các bản phát hành mới nhất [**here**](https://github.com/Sj09-gnc/uYouPlus/releases). Tải xuống và cài đặt iPA trực tiếp.
 
 ---
 
