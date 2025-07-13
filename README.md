@@ -1,34 +1,35 @@
-# Download iPA Files for uYouPlus
+# Tải xuống tệp iPA cho uYouPlus
 
-Welcome to my fork of **uYouPlus**! This repository is your one-stop source for downloading pre-built **iPA files**. Subscribe to the release notifications to stay updated with the latest builds.
-
----
-
-### 🚀 **Why This Repo?**
-
-- **Ready-to-Use iPA Files**: No need to build the project yourself — just download and install!
-- **Stay Updated**: Subscribe to releases and never miss an update.
-- **Compatibility**: Supports iOS/iPadOS 14.0 or later.
+Chào mừng bạn đến với nhánh uYouPlus của tôi ! Kho lưu trữ này là nguồn duy nhất giúp bạn tải xuống các tệp iPA dựng sẵn . Đăng ký nhận thông báo phát hành để cập nhật các bản dựng mới nhất.
 
 ---
 
-### 📥 **Download**
+### 🚀 Tại sao lại là Repo này?**
 
-Find the latest releases [**here**](https://github.com/mlclmtan/uYouPlus/releases/latest). Download and install the iPA directly.
-
----
-
-### 💡 **Installation**
-
-- Use tools like **AltStore** or **Sideloadly** for installation.
-- [Installation guide](https://github.com/qnblackcat/uYouPlus/wiki/Installation).
+- **Tệp iPA sẵn sàng sử dụng : Không cần phải tự xây dựng dự án — chỉ cần tải xuống và cài đặt!
+- **Luôn cập nhật : Đăng ký để nhận thông tin phát hành và không bao giờ bỏ lỡ bất kỳ bản cập nhật nào.
+- **Khả năng tương thích : Hỗ trợ iOS/iPadOS 14.0 trở lên.
 
 ---
 
-### 🌟 **Get Notified**
+### 📥 **Tải xuống**
 
-Click the "Watch" button at the top of this page and select **"Releases only"** to subscribe to updates.
+Tìm các bản phát hành mới nhất [**here**](https://github.com/mlclmtan/uYouPlus/releases/latest). Tải xuống và cài đặt iPA trực tiếp.
 
 ---
 
-Thank you for visiting! Enjoy your enhanced YouTube experience with **uYouPlus**.
+### 💡 **Cài đặt**
+
+- Sử dụng các công cụ như AltStore hoặc Sideloadly để cài đặt.
+- [Hướng dẫn cài đặt](https://github.com/qnblackcat/uYouPlus/wiki/Installation).
+
+---
+
+### 🌟 **Nhận thông báo**
+
+Nhấp vào nút "Watch" ở đầu trang này và chọn **"Releases only"** để đăng ký nhận thông tin cập nhật.
+
+---
+
+Cảm ơn bạn đã ghé thăm! Chúc bạn có trải nghiệm YouTube tuyệt vời hơn với uYouPlus .
+Source used from [**qnblackcat**] (https://github.com/qnblackcat/uYouPlus)
