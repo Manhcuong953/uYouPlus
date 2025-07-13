@@ -32,4 +32,4 @@ Nhấp vào nút "Watch" ở đầu trang này và chọn **"Releases only"** đ
 ---
 
 Cảm ơn bạn đã ghé thăm! Chúc bạn có trải nghiệm YouTube tuyệt vời hơn với uYouPlus .
-Source used from [**qnblackcat**] (https://github.com/qnblackcat/uYouPlus)
+Source used from [**qnblackcat**](https://github.com/qnblackcat/uYouPlus)
