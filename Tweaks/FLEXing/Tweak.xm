@@ -8,6 +8,15 @@
 
 
 #import "Interfaces.h"
+#import <rootless.h>
+#import <HBLog.h>
+
+#if TARGET_OS_SIMULATOR
+#import <UIKit/UIFunctions.h>
+#define realPath(path) [UISystemRootDirectory() stringByAppendingPathComponent:path]
+#else
+#define realPath(path) path
+#endif
 
 BOOL initialized = NO;
 id manager = nil;
@@ -22,25 +31,34 @@ static Class (*FLXWindowClass)();
 /// This isn't perfect, but works for most cases as intended
 inline bool isLikelyUIProcess() {
     NSString *executablePath = NSProcessInfo.processInfo.arguments[0];
+    HBLogInfo(@"FLEXing: executablePath: %@", executablePath);
 
-    return [executablePath hasPrefix:@"/var/containers/Bundle/Application"] ||
-        [executablePath hasPrefix:@"/Applications"] ||
-        [executablePath containsString:@"/procursus/Applications"] ||
-        [executablePath hasSuffix:@"CoreServices/SpringBoard.app/SpringBoard"];
+    return [executablePath hasSuffix:@"CoreServices/SpringBoard.app/SpringBoard"] ||
+        [executablePath hasPrefix:realPath(@"/Applications")] ||
+#if TARGET_OS_SIMULATOR
+        [executablePath containsString:@"/data/Containers/Bundle/Application"];
+#else
+        [executablePath hasPrefix:@"/var/containers/Bundle/Application"] ||
+        [executablePath containsString:@"/procursus/Applications"];
+#endif
 }
 
 inline bool isSnapchatApp() {
-    // See: near line 44 below
     return [NSBundle.mainBundle.bundleIdentifier isEqualToString:@"com.toyopagroup.picaboo"];
 }
 
 inline BOOL flexAlreadyLoaded() {
     return NSClassFromString(@"FLEXExplorerToolbar") != nil;
-} 
+}
 
 %ctor {
-    NSString *standardPath = @"/var/jb/Library/MobileSubstrate/DynamicLibraries/libFLEX.dylib";
-    NSString *reflexPath =   @"/var/jb/Library/MobileSubstrate/DynamicLibraries/libreflex.dylib";
+#if TARGET_OS_SIMULATOR
+    NSString *standardPath = realPath(@"/Library/MobileSubstrate/DynamicLibraries/libFLEX.dylib");
+    NSString *reflexPath =   realPath(@"/Library/MobileSubstrate/DynamicLibraries/libreflex.dylib");
+#else
+    NSString *standardPath = ROOT_PATH_NS(@"/Library/MobileSubstrate/DynamicLibraries/libFLEX.dylib");
+    NSString *reflexPath =   ROOT_PATH_NS(@"/Library/MobileSubstrate/DynamicLibraries/libreflex.dylib");
+#endif
     NSFileManager *disk = NSFileManager.defaultManager;
     NSString *libflex = nil;
     NSString *libreflex = nil;
@@ -56,11 +74,11 @@ inline BOOL flexAlreadyLoaded() {
         NSString *executablePath = NSProcessInfo.processInfo.arguments[0];
         NSString *whereIam = executablePath.stringByDeletingLastPathComponent;
         NSString *possibleFlexPath = [whereIam stringByAppendingPathComponent:@"Frameworks/libFLEX.dylib"];
-        NSString *possibleRelexPath = [whereIam stringByAppendingPathComponent:@"Frameworks/libreflex.dylib"];
+        NSString *possibleReflexPath = [whereIam stringByAppendingPathComponent:@"Frameworks/libreflex.dylib"];
         if ([disk fileExistsAtPath:possibleFlexPath]) {
             libflex = possibleFlexPath;
-            if ([disk fileExistsAtPath:possibleRelexPath]) {
-                libreflex = possibleRelexPath;
+            if ([disk fileExistsAtPath:possibleReflexPath]) {
+                libreflex = possibleReflexPath;
             }
         } else {
             // libFLEX not found
@@ -77,6 +95,8 @@ inline BOOL flexAlreadyLoaded() {
             if (libreflex) {
                 dlopen(libreflex.UTF8String, RTLD_NOW);
             }
+
+            HBLogInfo(@"FLEXing: Initialized");
         }
     }
 
@@ -143,14 +163,6 @@ inline BOOL flexAlreadyLoaded() {
 - (BOOL)_canShowWhileLocked {
     return YES;
 }
-
-- (UIWindow *)statusWindow {
-    @try {
-        return [UIApplication.sharedApplication valueForKey:@"_embeddedScreenStatusBarWindow"];
-    } @catch (NSException *e) {
-        return [UIApplication.sharedApplication valueForKey:@"_statusBarWindow"];
-    }
-}
 %end
 
 %hook _UISheetPresentationController
@@ -158,10 +170,11 @@ inline BOOL flexAlreadyLoaded() {
     self = %orig;
     if ([present isKindOfClass:%c(FLEXNavigationController)]) {
         // Enable half height sheet
-        if ([self respondsToSelector:@selector(_presentsAtStandardHalfHeight)])
+        if ([self respondsToSelector:@selector(_presentsAtStandardHalfHeight)]) {
             self._presentsAtStandardHalfHeight = YES;
-        else
+        } else {
             self._detents = @[[%c(_UISheetDetent) _mediumDetent], [%c(_UISheetDetent) _largeDetent]];
+        }
         // Start fullscreen, 0 for half height
         self._indexOfCurrentDetent = 1;
         // Don't expand unless dragged up
@@ -175,7 +188,7 @@ inline BOOL flexAlreadyLoaded() {
 %end
 
 %hook FLEXManager
-%new
+%new(@@:@)
 + (NSString *)dlopen:(NSString *)path {
     if (!dlopen(path.UTF8String, RTLD_NOW)) {
         return @(dlerror());
@@ -184,3 +197,11 @@ inline BOOL flexAlreadyLoaded() {
     return @"OK";
 }
 %end
+
+%ctor {
+#if TARGET_OS_SIMULATOR
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [manager performSelector:show];
+    });
+#endif
+}

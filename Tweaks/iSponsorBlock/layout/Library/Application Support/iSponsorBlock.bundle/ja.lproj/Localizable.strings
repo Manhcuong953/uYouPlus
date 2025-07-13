@@ -14,7 +14,6 @@
 "SelfPromo" = "自己宣伝";
 "Non-MusicSection" = "音楽: 音楽以外のセクション";
 "Non-Music" = "音楽以外";
-"Preview" = "Preview";
 "SponsorBlockUserID" = "SponsorBlockユーザーID";
 "SponsorBlockAPIInstance" = "SponsorBlock APIインスタンス";
 
@@ -85,4 +84,3 @@
 "interaction" = "行動のお願い";
 "selfpromo" = "自己宣伝";
 "music_offtopic" = "音楽以外";
-"preview" = "preview";

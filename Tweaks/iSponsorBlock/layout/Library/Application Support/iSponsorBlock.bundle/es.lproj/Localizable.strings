@@ -14,7 +14,6 @@
 "SelfPromo" = "Auto promoción";
 "Non-MusicSection" = "Música: sección sin música";
 "Non-Music" = "Sin música";
-"Preview" = "Preview";
 "SponsorBlockUserID" = "ID usuario de SponsorBlock";
 "SponsorBlockAPIInstance" = "Instancia API de SponsorBlock";
 
@@ -85,4 +84,3 @@
 "interaction" = "interacción";
 "selfpromo" = "auto promoción";
 "music_offtopic" = "no musical";
-"preview" = "preview";

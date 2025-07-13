@@ -25,7 +25,7 @@
     ]];
 }
 
-%new
+%new(v@:@)
 - (void)flexGestureHandler:(UILongPressGestureRecognizer *)recognizer {
 	if (recognizer.state == UIGestureRecognizerStateBegan) {
 		[self _statusBarTapped:recognizer type:kFLEXLongPressGesture];
@@ -45,8 +45,20 @@
 %end // UIStatusBarManager
 %end // iOS13StatusBar
 
+#if TARGET_OS_SIMULATOR
+%hook SpringBoard
+- (void)applicationDidFinishLaunching:(id)arg {
+    %orig;
+    [manager performSelector:show];
+}
+%end
+#endif
+
 %ctor {
     if (@available(iOS 13, *)) {
         %init(iOS13StatusBar);
     }
+#if TARGET_OS_SIMULATOR
+    %init;
+#endif
 }

@@ -4,26 +4,25 @@
 #import "YouTubeHeader/QTMIcon.h"
 #import "YouTubeHeader/YTAppDelegate.h"
 #import "YouTubeHeader/YTAppViewControllerImpl.h"
-#import "YouTubeHeader/YTIChapterRenderer.h"
 #import "YouTubeHeader/YTIModularPlayerBarModel.h"
-#import "YouTubeHeader/YTInlinePlayerBarContainerView.h"
 #import "YouTubeHeader/YTInlinePlayerBarView.h"
 #import "YouTubeHeader/YTMainAppControlsOverlayView.h"
 #import "YouTubeHeader/YTMainAppVideoPlayerOverlayViewController.h"
 #import "YouTubeHeader/YTModularPlayerBarController.h"
-#import "YouTubeHeader/YTNGWatchLayerViewController.h"
+#import "YouTubeHeader/YTRightNavigationButtons.h"
 #import "YouTubeHeader/YTPageStyleController.h"
 #import "YouTubeHeader/YTPageStyleControllerImpl.h"
 #import "YouTubeHeader/YTPlayerBarProtocol.h"
-#import "YouTubeHeader/YTPlayerBarSegmentedProgressView.h"
-#import "YouTubeHeader/YTPlayerBarSegmentMarkerView.h"
-#import "YouTubeHeader/YTPlayerOverlayManager.h"
 #import "YouTubeHeader/YTPlayerView.h"
 #import "YouTubeHeader/YTPlayerViewController.h"
-#import "YouTubeHeader/YTRightNavigationButtons.h"
+#import "YouTubeHeader/YTPlayerBarSegmentMarkerView.h"
+#import "YouTubeHeader/YTPlayerBarSegmentedProgressView.h"
+#import "YouTubeHeader/YTPlayerOverlayManager.h"
 #import "YouTubeHeader/YTSegmentableInlinePlayerBarView.h"
 #import "YouTubeHeader/YTSingleVideoTime.h"
+#import "YouTubeHeader/YTNGWatchLayerViewController.h"
 #import "YouTubeHeader/YTWatchLayerViewController.h"
+#import "YouTubeHeader/YTIChapterRenderer.h"
 #import "MBProgressHUD.h"
 #import "SponsorSegment.h"
 #include <math.h>
@@ -45,7 +44,6 @@ extern NSMutableArray <NSString *> *kWhitelistedChannels;
 
 @interface YTInlinePlayerBarContainerView (iSB)
 @property (nonatomic, strong, readwrite) id modularPlayerBar;
-- (id)playerBar;
 @end
 
 @interface YTPlayerViewController (iSB)

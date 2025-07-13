@@ -14,7 +14,6 @@
 "SelfPromo" = "Promosi diri sendiri";
 "Non-MusicSection" = "Musik: bagian non-musik";
 "Non-Music" = "Non-musik";
-"Preview" = "Preview";
 "SponsorBlockUserID" = "ID pengguna SponsorBlock";
 "SponsorBlockAPIInstance" = "Instansi API SponsorBlock";
 
@@ -85,4 +84,3 @@
 "interaction" = "interaksi";
 "selfpromo" = "promosi diri sendiri";
 "music_offtopic" = "non-musik";
-"preview" = "preview";
