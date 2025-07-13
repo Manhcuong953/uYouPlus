@@ -4,10 +4,10 @@ Chào mừng bạn đến với nhánh uYouPlus của tôi ! Kho lưu trữ này
 
 ---
 
-### 🚀 Tại sao lại là Repo này?**
+### 🚀 **Bug and Fix**
 
-- **Tệp iPA sẵn sàng sử dụng : Không cần phải tự xây dựng dự án — chỉ cần tải xuống và cài đặt!
-- **Luôn cập nhật : Đăng ký để nhận thông tin phát hành và không bao giờ bỏ lỡ bất kỳ bản cập nhật nào.
+- *Toàn màn hình*: [**here**](https://github.com/Sj09-gnc/uYouPlus/wiki/App-becomes-unresponsive-when-trying-to-exit-fullscreen)
+- *Icon không hoạt động*: [**here**](https://github.com/Sj09-gnc/uYouPlus/wiki/Icon-not-work)
 - **Khả năng tương thích : Hỗ trợ iOS/iPadOS 14.0 trở lên.
 
 ---
