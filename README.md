@@ -35,4 +35,5 @@ Cảm ơn bạn đã ghé thăm! Chúc bạn có trải nghiệm YouTube tuyệt
 
 
 Source used from [**qnblackcat**](https://github.com/qnblackcat/uYouPlus)
-uYou+ is a modified version of uYou (made by [**MiRO92**](https://github.com/MiRO92/uYou-for-YouTube)) with additional features and mainly made for non jailbroken users!
+
+uYouPlus is tailored for users who prefer pre-built iPA files ready for download and installation. Originally developed by [**MiRO92**](https://github.com/MiRO92/uYou-for-YouTube), uYou is a feature-rich modification of YouTube. uYouPlus enhances the experience further, especially for non-jailbroken users, by introducing additional features and optimisations.
