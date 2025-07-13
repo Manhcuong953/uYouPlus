@@ -35,4 +35,4 @@ Cảm ơn bạn đã ghé thăm! Chúc bạn có trải nghiệm YouTube tuyệt
 
 
 Source used from [**qnblackcat**](https://github.com/qnblackcat/uYouPlus)
-uYou+ is a modified version of uYou (made by @MiRO92) with additional features and mainly made for non jailbroken users!
+uYou+ is a modified version of uYou (made by [**MiRO92**](https://github.com/MiRO92/uYou-for-YouTube)) with additional features and mainly made for non jailbroken users!
