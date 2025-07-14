@@ -38,7 +38,7 @@
 static NSString *const kAppTheme = @"appTheme";
 static NSString *const kOLEDKeyboard = @"oledKeyBoard_enabled";
 // Video player
-static NSString *const kSlideToSeek = @"slideToSeek_enabled";
+static NSString *const kSlideToSeek = @"slideToSeek_disable";
 static NSString *const kSnapToChapter = @"snapToChapter_enabled";
 static NSString *const kPinchToZoom = @"pinchToZoom_enabled";
 static NSString *const kYTMiniPlayer = @"ytMiniPlayer_enabled";
@@ -67,9 +67,9 @@ static NSString *const kHideChipBar = @"hideChipBar_enabled";
 static NSString *const kHidePlayNextInQueue = @"hidePlayNextInQueue_enabled";
 static NSString *const kiPhoneLayout = @"iPhoneLayout_enabled";
 static NSString *const kBigYTMiniPlayer = @"bigYTMiniPlayer_enabled";
-static NSString *const kReExplore = @"reExplore_enabled";
-static NSString *const kGoogleSigninFix = @"googleSigninFix_enabled";
-static NSString *const kFlex = @"flex_enabled";
+static NSString *const kReExplore = @"reExplore_disable";
+static NSString *const kGoogleSigninFix = @"googleSigninFix_disable";
+static NSString *const kFlex = @"flex_disable";
 
 // Disable snap to chapter
 @interface YTSegmentableInlinePlayerBarView
