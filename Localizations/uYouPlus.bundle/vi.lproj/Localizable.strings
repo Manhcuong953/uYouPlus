@@ -1,19 +1,6 @@
 // About
-"ABOUT" = "Giới thiệu";
 
 "VERSION" = "Phiên bản";
-"VERSION_CHECK" = "Chạm để kiểm tra bản cập nhật!";
-
-"REPORT_AN_ISSUE" = "Báo lỗi";
-"ADD_TITLE" = "Thêm tiêu đề lỗi ở đây...";
-
-"COPY_SETTINGS" = "Copy settings";
-"COPY_SETTINGS_DESC" = "Copy all current settings to the clipboard";
-"PASTE_SETTINGS" = "Paste settings";
-"PASTE_SETTINGS_DESC" = "Paste settings from clipboard and apply";
-"PASTE_SETTINGS_ALERT" = "Are you sure you want to paste the settings?";
-
-"QUIT_YOUTUBE" = "Đóng YouTube";
 
 "RESTART_YOUTUBE" = "Khởi động lại YouTube để áp dụng các thay đổi";
 
@@ -144,15 +131,3 @@
 
 "NEW_MINIPLAYER_STYLE" = "Giao diện trình phát thu nhỏ kiểu mới (BigYTMiniPlayer)";
 "NEW_MINIPLAYER_STYLE_DESC" = "Cần khởi động lại ứng dụng.";
-
-"YT_RE_EXPLORE" = "Thay thế tab Shorts bằng tab Khám phá (YTReExplore)";
-"YT_RE_EXPLORE_DESC" = "Cần khởi động lại ứng dụng.";
-
-"ENABLE_FLEX" = "Bật FLEX";
-"ENABLE_FLEX_DESC" = "Bật FLEX để kiểm tra/sửa lỗi (không khuyến khích). Nếu bạn không biết FLEX là gì thì đừng bật tính năng này.";
-
-"FIX_GOOGLE_SIGNIN" = "Sửa lỗi không thể đăng nhập tài khoản Google";
-"FIX_GOOGLE_SIGNIN_DESC" = "Chỉ bật tính năng này khi bạn không thể đăng nhập tài khoản Google và ứng dụng được cài qua TrollStore. Nếu bạn có thể đăng nhập bình thường thì hãy tắt tính năng này. Cần khởi động lại ứng dụng.";
-
-"GOOGLE_SIGNIN_FIX" = "Google sign-in fix";
-"GOOGLE_SIGNIN_FIX_DESC" = "";
